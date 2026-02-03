@@ -1,20 +1,25 @@
 const products = [
   {
-    name: "Playera Negra",
-    price: 300,
+    name: "Discada x kg",
+    price: 500,
     stripeLink: "https://buy.stripe.com/TU_LINK_1"
   },
   {
-    name: "Sudadera Gris",
-    price: 600,
+    name: "Salsa Verde",
+    price: 200,
     stripeLink: "https://buy.stripe.com/TU_LINK_2"
   },
   {
-    name: "Gorra Blanca",
-    price: 250,
+    name: "Salsa Roja",
+    price: 200,
     stripeLink: "https://buy.stripe.com/TU_LINK_3"
   }
-];
+  ], 
+  {
+    name: "Salsa 3",
+    price: 200,
+    stripeLink: "https://buy.stripe.com/TU_LINK_1"
+  },
 
 const container = document.getElementById("product-list");
 
