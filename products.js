@@ -2,7 +2,7 @@ const products = [
   {
     name: "Discada x kg",
     price: 500,
-    stripeLink: "https://buy.stripe.com/TU_LINK_1"
+    stripeLink: "https://buy.stripe.com/7sY9ATcxufxY0OQgP0eEo00"
   },
   {
     name: "Salsa Verde",
