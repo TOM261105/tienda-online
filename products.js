@@ -13,13 +13,13 @@ const products = [
     name: "Salsa Roja",
     price: 200,
     stripeLink: "https://buy.stripe.com/TU_LINK_3"
-  }
-  ], 
+  } 
   {
     name: "Salsa 3",
     price: 200,
     stripeLink: "https://buy.stripe.com/TU_LINK_1"
-  };
+  }
+];
 
 const container = document.getElementById("product-list");
 
