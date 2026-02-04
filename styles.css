@@ -42,3 +42,10 @@ button {
 button:hover {
   background: #333;
 }
+.product {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 12px;
+}
+
