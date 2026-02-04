@@ -2,6 +2,7 @@ const products = [
   {
     name: "Discada x kg",
     price: 500,
+    image: "images/discada.jpg",
     stripeLink: "https://buy.stripe.com/7sY9ATcxufxY0OQgP0eEo00"
   },
   {
@@ -26,11 +27,12 @@ const container = document.getElementById("product-list");
 products.forEach(product => {
   container.innerHTML += `
     <div class="product">
-      <h2>${product.name}</h2>
-      <p>Precio: $${product.price} MXN</p>
-      <a href="${product.stripeLink}" target="_blank">
-        <button>Comprar</button>
-      </a>
+      <img src="${product.image}" alt="${product.name}">
+        <h2>${product.name}</h2>
+        <p>Precio: $${product.price} MXN</p>
+        <a href="${product.stripeLink}" target="_blank">
+          <button>Comprar</button>
+        </a>
     </div>
   `;
 });
