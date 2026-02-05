@@ -132,13 +132,6 @@ button:hover {
   background-color: #e96e00;
 }
 
-.cart-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-}
 
 .cart-controls {
   display: flex;
@@ -150,11 +143,11 @@ button:hover {
 .cart-controls button {
   background: #f3f3f3;
   border: none;
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 10px;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 10px;
   transition: all 0.2s ease;
 }
 
