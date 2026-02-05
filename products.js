@@ -25,19 +25,6 @@ const products = [
   }
 ];
 
-const container = document.getElementById("product-list");
-
-products.forEach(product => {
-  container.innerHTML += `
-    <div class="product">
-      <img src="${product.image}" alt="${product.name}">
-        <h2>${product.name}</h2>
-        <p>Precio: $${product.price} MXN</p>
-         <button onclick="addToCart(${product.id})">Agregar al carrito</button>
-        </a>
-    </div>
-  `;
-});
 
 function renderCart() {
   const cartItems = document.getElementById("cart-items");
