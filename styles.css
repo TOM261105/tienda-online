@@ -84,4 +84,18 @@ button:hover {
   border-radius: 12px;
 }
 
+.logo {
+  height: 80px;       /* ajusta el tamaño */
+  width: auto;
+  display: block;
+  margin: 0 auto 20px; /* centrado */
+}
+
+.logo {
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
 
