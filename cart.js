@@ -51,34 +51,3 @@ function checkout() {
     summary += `${item.name} x${item.quantity} - $${item.price * item.quantity}\n`;
     total += item.price * item.quantity;
   });
-
-function increaseQty(id) {
-  const item = cart.find(p => p.id === id);
-  if (item) {
-    item.quantity++;
-    renderCart();
-  }
-}
-
-function decreaseQty(id) {
-  const item = cart.find(p => p.id === id);
-  if (item && item.quantity > 1) {
-    item.quantity--;
-  } else {
-    removeFromCart(id);
-  }
-  renderCart();
-}
-
-function removeFromCart(id) {
-  cart = cart.filter(item => item.id !== id);
-  renderCart();
-}
-
-
-  summary += `\nTotal: $${total}`;
-
-  alert(summary);
-
-  // aquí después conectamos Stripe
-}
