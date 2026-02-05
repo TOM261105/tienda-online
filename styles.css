@@ -143,8 +143,8 @@ button:hover {
 .cart-controls button {
   background: #f3f3f3;
   border: none;
-  width: 20px;
-  height: 10px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   cursor: pointer;
   font-size: 10px;
@@ -160,9 +160,9 @@ button:hover {
 
 /* Cantidad */
 .cart-controls span {
-  min-width: 5px;
+  min-width: 20px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 .cart-controls button:last-child:hover {
