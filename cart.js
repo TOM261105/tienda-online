@@ -15,12 +15,6 @@ function addToCart(productId) {
   renderCart();
 }
 
-// Quitar producto
-function removeFromCart(productId) {
-  cart = cart.filter(p => p.id !== productId);
-  renderCart();
-}
-
 // Cambiar cantidad
 function changeQuantity(productId, amount) {
   const item = cart.find(p => p.id === productId);
