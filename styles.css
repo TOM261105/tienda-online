@@ -42,10 +42,20 @@ button {
 button:hover {
   background: #333;
 }
+
+.product img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
 .product {
   text-align: center;
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 12px;
 }
+
 
