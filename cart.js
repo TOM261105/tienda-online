@@ -82,3 +82,52 @@ function removeFromCart(id) {
 
   // aquí después conectamos Stripe
 }
+
+function renderCart() {
+  const cartItems = document.getElementById("cart-items");
+  const cartTotal = document.getElementById("cart-total");
+
+  cartItems.innerHTML = "";
+  let total = 0;
+
+  cart.forEach(item => {
+    total += item.price * item.quantity;
+
+    cartItems.innerHTML += `
+      <div class="cart-item">
+        <span>${item.name} - $${item.price}</span>
+
+        <div class="cart-controls">
+          <button onclick="decreaseQty(${item.id})">−</button>
+          <span>${item.quantity}</span>
+          <button onclick="increaseQty(${item.id})">+</button>
+          <button onclick="removeFromCart(${item.id})">🗑️</button>
+        </div>
+      </div>
+    `;
+  });
+
+  cartTotal.textContent = `$${total}`;
+}
+function addToCart(id) {
+  const product = products.find(p => p.id === id);
+  const itemInCart = cart.find(p => p.id === id);
+
+  if (itemInCart) {
+    itemInCart.quantity++;
+  } else {
+    cart.push({ ...product, quantity: 1 });
+  }
+
+  renderCart();
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-controls button {
+  margin: 0 4px;
+  cursor: pointer;
+}
