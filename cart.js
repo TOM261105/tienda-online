@@ -47,7 +47,6 @@ function renderCart() {
           <button onclick="changeQuantity(${item.id}, -1)">−</button>
           <span>${item.quantity}</span>
           <button onclick="changeQuantity(${item.id}, 1)">+</button>
-          <button onclick="removeFromCart(${item.id})">🗑</button>
         </div>
       </div>
     `;
