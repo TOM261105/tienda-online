@@ -25,30 +25,19 @@ const products = [
   }
 ];
 
+const container = document.getElementById("product-list");
 
-function renderCart() {
-  const cartItems = document.getElementById("cart-items");
-  const cartTotal = document.getElementById("cart-total");
-
-  cartItems.innerHTML = "";
-  let total = 0;
-
-  cart.forEach(item => {
-    total += item.price * item.quantity;
-
-    cartItems.innerHTML += `
-      <div class="cart-item">
-        <span>${item.name} - $${item.price}</span>
-
-        <div class="cart-controls">
-          <button onclick="decreaseQty(${item.id})">−</button>
-          <span>${item.quantity}</span>
-          <button onclick="increaseQty(${item.id})">+</button>
-          <button onclick="removeFromCart(${item.id})">🗑️</button>
-        </div>
-      </div>
-    `;
-  });
+products.forEach(product => {
+  container.innerHTML += `
+    <div class="product">
+      <img src="${product.image}" alt="${product.name}">
+        <h2>${product.name}</h2>
+        <p>Precio: $${product.price} MXN</p>
+         <button onclick="addToCart(${product.id})">Agregar al carrito</button>
+        </a>
+    </div>
+  `;
+});
 
   cartTotal.textContent = `$${total}`;
 }
