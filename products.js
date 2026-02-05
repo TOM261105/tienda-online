@@ -1,27 +1,27 @@
 const products = [
   {
+    id: 1,
     name: "Discada x kg",
     price: 500,
     image: "images/discada.jpg",
-    stripeLink: "https://buy.stripe.com/7sY9ATcxufxY0OQgP0eEo00"
   },
   {
+    id: 2,
     name: "La de mamá ",
     price: 200,
     image: "images/salsademama.jpg",
-    stripeLink: "https://buy.stripe.com/TU_LINK_2"
   },
   {
+    id: 3,
     name: "Rafavorita",
     price: 200,
     image: "images/rafavorita.jpg",
-    stripeLink: "https://buy.stripe.com/TU_LINK_3"
   },
   {
+    id: 4,
     name: "70 chiles",
     price: 200,
     image: "images/70chiles.jpg",
-    stripeLink: "https://buy.stripe.com/TU_LINK_4"
   }
 ];
 
