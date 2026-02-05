@@ -40,7 +40,7 @@ button {
 }
 
 button:hover {
-  background: orange;
+  background: #333;
 }
 
 .product button {
@@ -55,7 +55,7 @@ button:hover {
 }
 
 .product button:hover {
-  background-color: #333;    /* cambia color */
+  background-color: orange;    /* cambia color */
 }
 
 .product {
