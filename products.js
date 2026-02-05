@@ -33,11 +33,9 @@ products.forEach(product => {
       <img src="${product.image}" alt="${product.name}">
         <h2>${product.name}</h2>
         <p>Precio: $${product.price} MXN</p>
+        <a href="${product.stripeLink}" target="_blank">
          <button onclick="addToCart(${product.id})">Agregar al carrito</button>
-        </button>
+        </a>
     </div>
   `;
 });
-
-  cartTotal.textContent = `$${total}`;
-}
