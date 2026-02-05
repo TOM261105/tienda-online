@@ -99,6 +99,22 @@ button:hover {
   transform: scale(1.05);
 }
 
+.cart {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
 .checkout-btn {
   width: 100%;
   padding: 14px;
