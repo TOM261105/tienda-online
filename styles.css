@@ -132,3 +132,63 @@ button:hover {
   background-color: #e96e00;
 }
 
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Botones generales */
+.cart-controls button {
+  background: #f3f3f3;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+/* Hover suave */
+.cart-controls button:hover {
+  background: #ff7a00;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Cantidad */
+.cart-controls span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Botón eliminar */
+.cart-controls button:last-child {
+  background: transparent;
+  color: #999;
+  font-size: 18px;
+}
+
+.cart-controls button:last-child:hover {
+  color: #ff3b3b;
+  background: transparent;
+  transform: scale(1.2);
+}
+
+.cart {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
