@@ -6,18 +6,21 @@ const products = [
     stripeLink: "https://buy.stripe.com/7sY9ATcxufxY0OQgP0eEo00"
   },
   {
-    name: "Salsa Verde",
+    name: "La de mamá ",
     price: 200,
+    image: "images/salsademama.jpg",
     stripeLink: "https://buy.stripe.com/TU_LINK_2"
   },
   {
-    name: "Salsa Roja",
+    name: "Rafavorita",
     price: 200,
+    image: "images/rafavorita.jpg",
     stripeLink: "https://buy.stripe.com/TU_LINK_3"
   },
   {
-    name: "Salsa 3",
+    name: "70 chiles",
     price: 200,
+    image: "images/70chiles.jpg",
     stripeLink: "https://buy.stripe.com/TU_LINK_4"
   }
 ];
