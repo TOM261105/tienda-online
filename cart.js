@@ -46,17 +46,19 @@ function renderCart() {
   cart.forEach(item => {
     total += item.price * item.quantity;
 
-    cartItems.innerHTML += `
-      <div class="cart-item">
-        <span>${item.name}</span>
-        <div>
-          <button onclick="changeQuantity(${item.id}, -1)">−</button>
-          <span>${item.quantity}</span>
-          <button onclick="changeQuantity(${item.id}, 1)">+</button>
-          <button onclick="removeFromCart(${item.id})">🗑</button>
-        </div>
-      </div>
-    `;
+cartItems.innerHTML += `
+  <div class="cart-item">
+    <span class="cart-name">${item.name}</span>
+
+    <div class="cart-controls">
+      <button class="qty-btn" onclick="changeQuantity(${item.id}, -1)">−</button>
+      <span class="qty">${item.quantity}</span>
+      <button class="qty-btn" onclick="changeQuantity(${item.id}, 1)">+</button>
+      <button class="remove-btn" onclick="removeFromCart(${item.id})">🗑</button>
+    </div>
+  </div>
+`;
+
   });
 
   cartTotal.textContent = `$${total}`;
