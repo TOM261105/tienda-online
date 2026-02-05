@@ -24,7 +24,6 @@ const products = [
     image: "images/70chiles.jpg",
   }
 ];
-
 const container = document.getElementById("product-list");
 
 products.forEach(product => {
