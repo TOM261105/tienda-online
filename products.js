@@ -38,3 +38,30 @@ products.forEach(product => {
     </div>
   `;
 });
+
+function renderCart() {
+  const cartItems = document.getElementById("cart-items");
+  const cartTotal = document.getElementById("cart-total");
+
+  cartItems.innerHTML = "";
+  let total = 0;
+
+  cart.forEach(item => {
+    total += item.price * item.quantity;
+
+    cartItems.innerHTML += `
+      <div class="cart-item">
+        <span>${item.name} - $${item.price}</span>
+
+        <div class="cart-controls">
+          <button onclick="decreaseQty(${item.id})">−</button>
+          <span>${item.quantity}</span>
+          <button onclick="increaseQty(${item.id})">+</button>
+          <button onclick="removeFromCart(${item.id})">🗑️</button>
+        </div>
+      </div>
+    `;
+  });
+
+  cartTotal.textContent = `$${total}`;
+}
