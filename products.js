@@ -2,28 +2,29 @@ const products = [
   {
     id: 1,
     name: "Discada x kg",
-    price: 500,
+    price: 450,
     image: "images/discada.jpg",
   },
   {
     id: 2,
     name: "La de mamá ",
-    price: 200,
+    price: 150,
     image: "images/salsademama.jpg",
   },
   {
     id: 3,
     name: "Rafavorita",
-    price: 200,
+    price: 150,
     image: "images/rafavorita.jpg",
   },
   {
     id: 4,
     name: "70 chiles",
-    price: 200,
+    price: 150,
     image: "images/70chiles.jpg",
   }
 ];
+
 const container = document.getElementById("product-list");
 
 products.forEach(product => {
