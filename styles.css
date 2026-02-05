@@ -167,28 +167,14 @@ button:hover {
 
 /* Cantidad */
 .cart-controls span {
-  min-width: 20px;
+  min-width: 5px;
   text-align: center;
   font-weight: 600;
-}
-
-/* Botón eliminar */
-.cart-controls button:last-child {
-  background: transparent;
-  color: #999;
-  font-size: 18px;
 }
 
 .cart-controls button:last-child:hover {
   color: #ff3b3b;
   background: transparent;
   transform: scale(1.2);
-}
-
-.cart {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
 }
 
