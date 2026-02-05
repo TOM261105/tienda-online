@@ -131,43 +131,21 @@ button:hover {
 .checkout-btn:hover {
   background-color: #e96e00;
 }
-
-
-.cart-controls {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/* Botones generales */
-.cart-controls button {
-  background: #f3f3f3;
-  border: none;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 10px;
-  transition: all 0.2s ease;
-}
-
-/* Hover suave */
-.cart-controls button:hover {
-  background: #ff7a00;
-  color: white;
-  transform: scale(1.1);
-}
-
-/* Cantidad */
 .cart-controls span {
-  min-width: 20px;
+  font-size: 14px;
+  min-width: 16px;
   text-align: center;
-  font-weight: 200;
+  color: #444;
+}
+.cart-controls button:last-child {
+  border: none;
+  color: #aaa;
+  font-size: 16px;
 }
 
 .cart-controls button:last-child:hover {
-  color: #ff3b3b;
+  color: #ff5a5a;
   background: transparent;
-  transform: scale(1.2);
 }
+
 
