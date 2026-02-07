@@ -13,9 +13,9 @@ header {
 
 #product-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .product {
@@ -191,3 +191,5 @@ button:hover {
 .cart-item:hover .cart-controls {
   opacity: 1;
 }
+
+
