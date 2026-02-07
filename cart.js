@@ -63,3 +63,19 @@ cartItems.innerHTML += `
 
   cartTotal.textContent = `$${total}`;
 }
+
+async function checkout() {
+  const response = await fetch("http://localhost:4242/create-checkout-session", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      items: cart
+    }),
+  });
+
+  const data = await response.json();
+  window.location.href = data.url;
+}
+
