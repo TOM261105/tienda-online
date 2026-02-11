@@ -65,7 +65,7 @@ cartItems.innerHTML += `
 }
 
 async function checkout() {
-  const response = await fetch("http://localhost:4242/create-checkout-session", {
+  const response = await fetch("hhttps://stripe-backend-xxxx.onrender.com/create-checkout-session", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
